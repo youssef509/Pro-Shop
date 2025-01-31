@@ -1,0 +1,32 @@
+{
+  "name": "proshop",
+  "version": "2.0.0",
+  "description": "eCommerce application built with MERN stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssef509/Pro-Shop.git"
+  },
+  "author": "Youssef Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youssef509/Pro-Shop/issues"
+  },
+  "homepage": "https://github.com/youssef509/Pro-Shop#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}
